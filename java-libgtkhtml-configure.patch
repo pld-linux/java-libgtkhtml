@@ -1,0 +1,37 @@
+diff -urN aa/libgtkhtml-java-2.6.0/configure.in libgtkhtml-java-2.6.0/configure.in
+--- aa/libgtkhtml-java-2.6.0/configure.in	2004-04-13 14:40:38.000000000 +0200
++++ libgtkhtml-java-2.6.0/configure.in	2004-04-14 14:34:02.783146752 +0200
+@@ -33,7 +33,7 @@
+ LIBGLADE_LIBS=
+ AC_SUBST(LIBGLADE_LIBS)
+ 
+-AC_INIT(gtk/src/jni/org_gnu_gtk_Gtk.c)
++AC_INIT(src/jni/org_gnu_gtk_html_dom_DomNode.c)
+ 
+ 
+ dnl Find already installed gnome modules
+@@ -50,8 +50,8 @@
+ dnl them automatically
+ 
+ 
+-GTKJAR=$(DESTDIR)$(datadir)/java-gtk/gtk$(gtkapiversion).jar
+-NATIVEGTKJAR=$(DESTDIR)$(libdir)/libgtkjar$(gtkapiversion).so
++GTKJAR=${datadir}/java-gnome/gtk${gtkapiversion}.jar
++NATIVEGTKJAR=${libdir}/libgtkjar${gtkapiversion}.so
+ JG_GTK_LIB_PATH=../../gtk/lib/
+ 
+ dnl ------------------------------------------------------------------------
+@@ -61,11 +61,11 @@
+ AC_SUBST(NATIVEGTKJAR)
+ AC_SUBST(JG_GTK_LIB_PATH)
+ 
+-if !test -e $GTKJAR; then
++if ! test -e $GTKJAR; then
+ 	echo "GTK Jar file $GTKJAR not found.";
+ 	exit 8;
+ fi
+-if !test -e $NATIVEGTKJAR; then
++if ! test -e $NATIVEGTKJAR; then
+ 	echo "gcj compiled native jar file $NATIVEGTKJAR not found.";
+ 	exit 8;
+ fi
