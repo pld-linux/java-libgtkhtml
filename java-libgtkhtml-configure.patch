@@ -6,7 +6,7 @@ diff -urN aa/libgtkhtml-java-2.6.0/configure.in libgtkhtml-java-2.6.0/configure.
  AC_SUBST(LIBGLADE_LIBS)
  
 -AC_INIT(gtk/src/jni/org_gnu_gtk_Gtk.c)
-+AC_INIT(src/jni/org_gnu_gtk_html_dom_DomNode.c)
++AC_INIT(src/jni/org_gnu_gtkhtml_dom_DomNode.c)
  
  
  dnl Find already installed gnome modules
