@@ -1,0 +1,13 @@
+diff -urN aa/libgtkhtml-java-2.6.0/configure.in libgtkhtml-java-2.6.0/configure.in
+--- aa/libgtkhtml-java-2.6.0/configure.in	2004-04-13 14:40:38.000000000 +0200
++++ libgtkhtml-java-2.6.0/configure.in	2004-04-14 14:36:20.912147952 +0200
+@@ -33,6 +33,9 @@
+ 
+ AC_INIT(src/jni/org_gnu_gtk_html_dom_DomNode.c)
+ 
++AC_SUBST(version)
++AC_SUBST(apiversion)
++AC_SUBST(gtkapiversion)
+ 
+ dnl Find already installed gnome modules
+ 
