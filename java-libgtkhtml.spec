@@ -24,22 +24,22 @@ BuildRequires:	slocate
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Java interface for gtkhtml.
+Java interface for libgtkhtml.
 
 %description -l pl
-Wrapper Java dla gtkhtml.
+Wrapper Java dla libgtkhtml.
 
 %package devel
-Summary:	Header files for java-gtkhtml library
-Summary(pl):	Pliki nag³ówkowe biblioteki java-gtkhtml
+Summary:	Header files for java-libgtkhtml library
+Summary(pl):	Pliki nag³ówkowe biblioteki java-libgtkhtml
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Header files for java-gtkhtml library.
+Header files for java-libgtkhtml library.
 
 %description devel -l pl
-Pliki nag³ówkowe biblioteki java-gtkhtml.
+Pliki nag³ówkowe biblioteki java-libgtkhtml.
 
 %prep
 %setup -q -n %{pname}-%{version}
