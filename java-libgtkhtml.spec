@@ -1,6 +1,6 @@
-%define	pname	libgtkhtml-java
-%define	api	2.6
-%define	gtkapi	2.4
+%define		pname	libgtkhtml-java
+%define		api	2.6
+%define		gtkapi	2.4
 Summary:	Java interface for libgtkhtml
 Summary(pl):	Wrapper Java dla libgtkhtml
 Name:		java-libgtkhtml
