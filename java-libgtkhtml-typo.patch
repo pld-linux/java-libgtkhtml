@@ -1,0 +1,12 @@
+diff -urN aa/libgtkhtml-java-2.7.2/src/jni/org_gnu_gtkhtml_dom_DomNodeList.c libgtkhtml-java-2.7.2/src/jni/org_gnu_gtkhtml_dom_DomNodeList.c
+--- aa/libgtkhtml-java-2.7.2/src/jni/org_gnu_gtkhtml_dom_DomNodeList.c	2004-06-08 15:15:39.000000000 +0200
++++ libgtkhtml-java-2.7.2/src/jni/org_gnu_gtkhtml_dom_DomNodeList.c	2004-07-05 00:24:39.670825096 +0200
+@@ -55,7 +55,7 @@
+ JNIEXPORT jint JNICALL Java_org_gnu_gtkhtml_dom_DomNodeList_dom_1node_1list_1get_1item
+   (JNIEnv *env, jclass cls, jint list, jlong index)
+ {
+-  return (jint) dom_NodeList_get_item((DomNodeList *)list, (gulong) index);
++  return (jint) dom_NodeList__get_item((DomNodeList *)list, (gulong) index);
+ }
+ 
+ #ifdef __cplusplus
