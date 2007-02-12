@@ -2,7 +2,7 @@
 %define	api	2.7
 %define	gtkapi	2.4
 Summary:	Java interface for libgtkhtml
-Summary(pl):	Wrapper Java dla libgtkhtml
+Summary(pl.UTF-8):   Wrapper Java dla libgtkhtml
 Name:		java-libgtkhtml
 Version:	2.7.2
 Release:	1
@@ -27,20 +27,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Java interface for libgtkhtml.
 
-%description -l pl
+%description -l pl.UTF-8
 Wrapper Java dla libgtkhtml.
 
 %package devel
 Summary:	Header files for java-libgtkhtml library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki java-libgtkhtml
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki java-libgtkhtml
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for java-libgtkhtml library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki java-libgtkhtml.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki java-libgtkhtml.
 
 %prep
 %setup -q -n %{pname}-%{version}
