@@ -8,7 +8,7 @@ Version:	2.6.0
 Release:	1
 License:	LGPL
 Group:		Libraries/Java
-Source0:	http://dl.sourceforge.net/java-gnome/%{pname}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/java-gnome/%{pname}-%{version}.tar.bz2
 # Source0-md5:	572c58994f7f28127bdbc382d2f632d5
 Patch0:		%{name}-configure.patch
 Patch1:		%{name}-version_vars.patch
